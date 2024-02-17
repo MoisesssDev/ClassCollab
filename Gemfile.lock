@@ -95,9 +95,6 @@ GEM
     concurrent-ruby (1.2.3)
     connection_pool (2.4.1)
     crass (1.0.6)
-    cuprite (0.15)
-      capybara (~> 3.0)
-      ferrum (~> 0.14.0)
     date (3.3.4)
     debug (1.9.1)
       irb (~> 1.10)
@@ -112,11 +109,6 @@ GEM
     factory_bot_rails (6.4.3)
       factory_bot (~> 6.4)
       railties (>= 5.0.0)
-    ferrum (0.14)
-      addressable (~> 2.5)
-      concurrent-ruby (~> 1.1)
-      webrick (~> 1.7)
-      websocket-driver (>= 0.6, < 0.8)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.1)
@@ -312,7 +304,6 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   capybara (>= 2.15)
-  cuprite
   debug
   factory_bot_rails
   importmap-rails
