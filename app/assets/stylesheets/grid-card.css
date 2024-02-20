@@ -1,0 +1,30 @@
+section {
+  display: flex;
+  /* justify-content: space-around; */
+  justify-content: center;
+  align-items: center;
+}
+
+section .card-homepage {
+  max-width: 260px;
+  text-align: center;
+}
+
+section .card-homepage .title {
+  font-size: 18px;
+  color: var(--light-purple);
+  margin: 10px 0;
+}
+
+section .card-homepage .text {
+  font-size: 14px;
+  color: var(--black-color);
+  margin: 10px 0;
+}
+
+.grid-cards .line {
+  height: 200px;
+  width: 2px;
+  background-color: var(--light-red);
+  margin: 0 60px;
+}
