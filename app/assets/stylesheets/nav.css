@@ -1,9 +1,9 @@
 nav {
   width: 100%;
-  border-bottom: 3px solid var(--light-red);
-  box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.35);
-  -webkit-box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.35);
-  -moz-box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.35);
+  border-bottom: 2px solid var(--light-red);
+  -webkit-box-shadow: 1px 4px 7px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 1px 4px 7px 0px rgba(0,0,0,0.3);
+  box-shadow: 1px 4px 7px 0px rgba(0,0,0,0.3);
 }
 
 nav .logo {
