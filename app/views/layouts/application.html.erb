@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RedeSocial</title>
+    <title>ClassCollab</title>
+    <%# fonts google %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application.css", "data-turbo-track": "reload" %>
+    <link rel="stylesheet" href="assets/application.css">
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <%= yield %>
+    <nav>
+      <img class="logo" src="assets/home/logo.png" alt="logo classcollab">
+    </nav>
+    <main>
+      <%= yield %>
+    </main>
+    <footer>
+      <div class="logo-footer">
+        <img src="assets/home/logo-footer.png" alt="logo classcollab">
+        <p>ClassCollab © 2024 </p>
+      </div>
+    </footer>
   </body>
 </html>

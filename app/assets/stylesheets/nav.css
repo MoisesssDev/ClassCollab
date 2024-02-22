@@ -1,0 +1,12 @@
+nav {
+  width: 100%;
+  border-bottom: 2px solid var(--light-red);
+  -webkit-box-shadow: 1px 4px 7px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 1px 4px 7px 0px rgba(0,0,0,0.3);
+  box-shadow: 1px 4px 7px 0px rgba(0,0,0,0.3);
+}
+
+nav .logo {
+  width: 130px;
+  margin-left: 10%;
+}

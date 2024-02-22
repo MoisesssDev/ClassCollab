@@ -1,0 +1,74 @@
+header {
+  margin: 60px auto;
+  display: flex;
+  max-width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .image-header {
+  max-width: 500px;
+  width: 90%;
+}
+
+header .box-header {
+  max-width: 600px;
+  width: 95%;
+}
+
+header .box-header .text-header {
+  font-size: 20px;
+  text-align: end;
+}
+
+header .box-header .text-header span {
+  color: var(--red-color);
+}
+
+header .box-header .button-header {
+  text-align: end;
+  margin-top: 100px;
+}
+
+header .box-header .button-header .button-create a {
+  background-color: var(--light-red);
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  padding: 12px 90px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.35);
+  -webkit-box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.35);
+  -moz-box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.35);
+}
+
+header .box-header .button-header .button-create a img {
+  margin-left: 30px;
+}
+
+header .box-header .button-header .button-create a:hover {
+  background-color: var(--red-color);
+  transition: 0.5s;
+}
+
+header .box-header .button-header .button-create {
+  margin-bottom: 4px;
+}
+
+header .box-header .login-header {
+  font-size: 14px;
+}
+
+header .box-header .login-header a {
+  color: var(--red-color);
+  text-decoration: none;
+}
+
+header .box-header .login-header a:hover {
+  text-decoration: underline;
+  transition: 0.5s;
+}
