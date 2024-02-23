@@ -14,4 +14,16 @@ describe 'Usuário acessa página de login' do
     expect(page).to have_content('zelda@email.com')
     expect(page).to have_button('Sair')
   end
+
+  it 'e tenta fazer login com campos inválidos' do
+    create(:user, email: 'zelda@email.com', password: '123456')
+
+    visit root_path
+    click_on 'Faça login!'
+    fill_in 'E-mail', with: ''
+    fill_in 'Senha', with: ''
+    click_on 'Entrar'
+
+    expect(page).to have_content('E-mail ou senha inválidos.')
+  end
 end
