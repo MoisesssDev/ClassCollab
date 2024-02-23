@@ -12,7 +12,9 @@
 
     <div class="button-header">
       <div class="button-create">
-        <a href="#">Crie sua conta! <span><%= image_tag('home/seta.png', alt: 'seta') %></span></a>
+        <%= link_to new_user_registration_path do %>
+          Crie sua conta! <%= image_tag('home/seta.png', alt: 'seta') %>
+        <% end %>
       </div>
       <div class="login-header">
         <p>Já possui uma conta? <%= link_to 'Faça login!', new_user_session_path %></p>
