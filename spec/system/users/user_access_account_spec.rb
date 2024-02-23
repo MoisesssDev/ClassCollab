@@ -6,9 +6,9 @@ describe 'Usuário acessa página de login' do
 
     visit root_path
     click_on 'Faça login!'
-    fill_in 'Email', with: 'zelda@email.com'
-    fill_in 'Password', with: '123456'
-    click_on 'Log in'
+    fill_in 'E-mail', with: 'zelda@email.com'
+    fill_in 'Senha', with: '123456'
+    click_on 'Entrar'
 
     expect(page).to have_content('Signed in successfully')
     expect(page).to have_content('zelda@email.com')
