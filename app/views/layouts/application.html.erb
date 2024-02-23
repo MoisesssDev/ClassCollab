@@ -9,15 +9,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <%# stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <link rel="stylesheet" href="assets/application.css">
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
 
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
     <nav>
-      <img class="logo" src="assets/home/logo.png" alt="logo classcollab">
+      <%= image_tag('home/logo.png', class: 'logo', alt: 'logo classcollab') %>
       <% if user_signed_in? %>
         <p><%= current_user.email %></p>
         <%= button_to 'Sair', destroy_user_session_path, method: :delete %>
@@ -30,7 +29,7 @@
     </main>
     <footer>
       <div class="logo-footer">
-        <img src="assets/home/logo-footer.png" alt="logo classcollab">
+        <%= image_tag('home/logo-footer.png', class: 'logo', alt: 'logo classcollab') %>
         <p>ClassCollab © 2024 </p>
       </div>
     </footer>
