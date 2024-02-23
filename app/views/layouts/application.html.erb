@@ -16,7 +16,8 @@
 
   <body>
     <nav>
-      <%= image_tag('home/logo.png', class: 'logo', alt: 'logo classcollab') %>
+      <%= link_to image_tag('home/logo.png', class: 'logo', alt: 'logo classcollab'), root_path %>
+      
       <% if user_signed_in? %>
         <p><%= current_user.email %></p>
         <%= button_to 'Sair', destroy_user_session_path, method: :delete %>
