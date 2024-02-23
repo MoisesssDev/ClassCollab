@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe 'Usuário acessa página de login' do
   it 'e faz login com sucesso' do
-    create(:user, email: 'zelda@nintendo', password: '123456')
+    create(:user, email: 'zelda@email.com', password: '123456')
 
     visit root_path
     click_on 'Fazer login!'
