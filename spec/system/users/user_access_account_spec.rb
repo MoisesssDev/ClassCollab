@@ -10,7 +10,7 @@ describe 'Usuário acessa página de login' do
     fill_in 'Senha', with: '123456'
     click_on 'Entrar'
 
-    expect(page).to have_content('Signed in successfully')
+    expect(page).to have_content('Login efetuado com sucesso')
     expect(page).to have_content('zelda@email.com')
     expect(page).to have_button('Sair')
   end
